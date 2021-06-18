@@ -1,9 +1,83 @@
-body {
-    color: #030201;
-    font-family: Muli, sans-serif;
-    font-size: 14px;
-    font-weight: normal;
-    text-transform: none;
-    line-height: 1.8;
-    letter-spacing: normal;
+* {
+    box-sizing: border-box
+}
+
+h1 {
+    font-style: Sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding: 5px;
+}
+
+p {
+    padding: 5px;
+    color: darkgoldenrod;
+}
+
+
+/* Add padding to containers */
+
+.container {
+    outline-style: ridge;
+    outline-width: 1px;
+    outline-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-style: Sans-serif;
+    padding: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 325px;
+    margin-right: 325px;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=date],
+input[type=number] {
+    outline: 0;
+    border-width: 0 0 1px;
+    border-color: black;
+    margin: 5px 0 22px 0;
+    width: 100%;
+    padding: 15px;
+}
+
+input[type=text]:focus,
+input[type=date]:focus,
+input[type=number]:focus {
+    background-color: white;
+    outline-style: double;
+}
+
+
+/* Overwrite default styles of hr */
+
+hr {
+    border: 1px solid darkgoldenrod;
+    margin-bottom: 25px;
+}
+
+
+/* Set a style for the submit/register button */
+
+.registerbtn {
+    background-color: #f8c053;
+    font-style: Sans-serif;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.registerbtn:hover {
+    opacity: 2;
+}
+
+.required {
+    color: red;
 }
